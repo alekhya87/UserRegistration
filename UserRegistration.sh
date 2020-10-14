@@ -36,3 +36,12 @@ then
 else
 	echo "invalid mobile number"
 fi
+#usecase-5
+read -p "enter password : " password
+passwordPattern="^[A-Za-z]{8,}$"
+if [[ $password =~ $passwordPattern ]]
+then
+   echo "valid password"
+else
+   echo "invalid password"
+fi
