@@ -9,3 +9,12 @@ then
 else
 	echo "invalied first name"
 fi
+#usecase-2
+read -p "enter valied last name : " lastName
+lastNamePattern="^[a-zA-Z]{3,}$"
+if [[ $lastName =~ $lastNamePattern ]]
+then
+   echo "valied last name "
+else
+   echo "invalied last name"
+fi
