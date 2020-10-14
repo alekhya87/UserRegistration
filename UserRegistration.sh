@@ -27,3 +27,12 @@ then
 else
 	echo "invalid email"
 fi
+#usecase-4
+read -p "enter mobile number : " mobile 
+mobilePattern="^[0-9]{2}[[:space:]][0-9]{10}$"
+if [[ $mobile =~ $mobilePattern ]]
+then
+	echo "valid mobile number"
+else
+	echo "invalid mobile number"
+fi
